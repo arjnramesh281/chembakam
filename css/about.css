@@ -7,12 +7,34 @@
     height:25px;
     background-color: rgb(205, 189, 169);
 }
-.conatiner2{
-    height:80vh;
+
+.conatiner2 {
+    height: 50vh;
     width: 100%;
-    background-color: rgb(255, 249, 249);
+    background-image: url('your-image-url.jpg'); /* Add your image here */
+    background-size: cover;
+    background-position: center;
     position: relative;
 }
+
+/* .conatiner2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 40%;
+            background: linear-gradient(90deg, 
+                rgba(51,18,18,1) 0%,   
+                rgba(51,18,18,0.9) 20%, 
+                rgba(31,11,11,0.6) 50%, 
+                rgba(0,0,0,0) 100%     
+            );
+    z-index:0;
+} */
+
+
+
 .c2img{
     width: 100%;
     height: 50vh;
@@ -512,4 +534,130 @@ width: 100%;
         margin-left: 10vw;
         text-align: center;
     }
+}
+
+
+
+
+
+/* .container_y------------------------------------------------------------------------------------ */
+
+.container_y{
+    width: 100%;
+    height: 85vh;
+    background-color: rgb(255, 246, 219);
+    margin-top: 10vh;
+}
+
+.container_y h1{
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+.head_y{
+    padding-top: 10vh;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    width: 82%;
+    margin: auto; 
+    margin-top: 20px;
+}
+
+.b1 {
+    height: 60vh; 
+    background-color: white; 
+}
+
+.b1_c{
+    text-align: center;
+    margin-top: 15%;
+}
+
+.b1_down{
+    width: 90%;
+    margin: auto;
+}
+
+.b1_down p{
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.b1_down h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1280px){
+    .b1 {
+        height: 100%; 
+       
+    }
+    
+    .container_y{
+        height: 90vh;
+    }
+}
+
+@media (max-width: 990px) {
+    .container_y{
+        height: 100vh;
+    }
+    
+}
+
+@media (max-width: 780px) {
+    .container_y{
+        height: 200vh;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+}
+@media (max-width: 480px) {
+
+    .container_y{
+        height: 220vh;
+    }
+}
+
+/* GREY CONTAINER----------------------------------------------------------------- */
+
+.container_g{
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(243, 242, 242);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: gray;
+}
+
+.container_g h1{
+    font-size: 40px;
+}
+
+@media (max-width:780px) {
+
+    .container_g{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 60vh;
+    }
+
+    .container_g h1{
+        text-align: center;
+    }
+    
 }

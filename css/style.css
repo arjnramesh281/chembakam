@@ -101,7 +101,7 @@ display: flex;
 gap:30px;
 flex-wrap: wrap;
 margin-top: 40px;
-/* margin-left: 20px; */
+margin-left: 20px;
 }
 .c5child{
     /* background-color: aqua; */
@@ -298,9 +298,12 @@ width: 100%;
         margin-bottom: 30px;
     }
     .container5{
-        gap:10px;
+        width: 97%;
+        gap:3px;
         justify-content: center;
         align-items: center;
+        margin:0;
+        margin-right: 60%;
         }
     .c5child1{
         height:20vh;
@@ -311,8 +314,8 @@ width: 100%;
         height:50vh;
     }
     .c5d5 button{
-        width:20vw;
-        height: 8vh;
+        width:23vw;
+        height: 6vh;
     }
     .c6child1 button{
         width:70vw;
